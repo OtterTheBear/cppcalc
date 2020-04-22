@@ -23,16 +23,20 @@ int main() {
             cin >> deg;
             if (deg == 0) {
                 cout << "Give me a value\n";
-                cin >> xlong;
-                cout << "The result is " << succeed(xlong) << "\n";
+                cin >> xdouble;
+                cout << "The result is " << succeed(xdouble) << "\n";
             } else if (deg == 1) {
                 cout << "Give me a value\n";
-                cin >> xlong;
+                cin >> xdouble;
                 cout << "Give me another value\n";
-                cin >> ylong;
-                cout << "The result is " << xlong + ylong << "\n";
+                cin >> ydouble;
+                cout << "The result is " << xdouble + ydouble << "\n";
             } else if (deg == 2) {
-                cout << "Indentation is working!!";
+                cout << "Give me a value";
+                cin >> xdouble;
+                cout << "Give me another one";
+                cin >> ydouble;
+                cout << "The result is " << xdouble * ydouble << "\n";
             }
         }
     }
