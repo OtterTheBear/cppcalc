@@ -10,7 +10,7 @@ int main() {
 	long double ydouble;
 	string hyper;
 	cout << "Welcome to cppcalc\n";
-	cout << "We have many calcs for you";
+	cout << "We have many calcs for you\n";
 	cout << "Hyperoperation or no? (y/n)\n";
 	cin >> hyper;
 	if (hyper == "y") {
@@ -18,19 +18,19 @@ int main() {
 		cout << "Positive or negative? (p/n)\n";
 		cin >> pos;
 		if (pos == "p") {
-			cout << "Pick a degree";
+			cout << "Pick a degree\n";
 			int deg;
 			cin >> deg;
 			if (deg == 0) {
-				cout << "Give me a value";
+				cout << "Give me a value\n";
 				cin >> xlong;
-				cout << "The result is " << succeed(xlong);
+				cout << "The result is " << succeed(xlong) << "\n";
 			} else if (deg == 1) {
-				cout << "Give me a value";
+				cout << "Give me a value\n";
 				cin >> xlong;
-				cout << "Give me another value";
+				cout << "Give me another value\n";
 				cin >> ylong;
-				cout << "The result is " << xlong + ylong;
+				cout << "The result is " << xlong + ylong << "\n";
 			}
 		}
 	}
