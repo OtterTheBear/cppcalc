@@ -23,7 +23,7 @@ int main() {
 			deg >> cin;
 			if (deg == 0) {
 				cout << "Give me a value";
-				cin >> x;
+				cin >> xlong;
 				cout << "The result is " << succeed(x);
 			} else if (deg == 1) {
 				cout << "Give me a value";
