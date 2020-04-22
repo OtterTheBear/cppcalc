@@ -9,6 +9,7 @@ int main() {
     long long int ylong;
     long double ydouble;
     bool loop = true;
+    string contin;
     string hyper;
     cout << "Welcome to cppcalc\n";
     cout << "We have many calcs for you\n";
@@ -27,9 +28,9 @@ int main() {
                     cout << "Give me a value\n";
                     cin >> xdouble;
                     cout << "The result is " << succeed(xdouble) << "\n";
-                    cout << "Continue?";
-                    static_cast<bool>(cin) >> loop;
-                    if (!loop) {
+                    cout << "Continue? (y/n)";
+                    cin >> contin;
+                    if (contin != "y") {
                         break;
                     } else {
                         continue;
