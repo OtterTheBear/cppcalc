@@ -14,17 +14,17 @@ int main() {
 	cout << "Hyperoperation or no? (y/n)\n";
 	cin >> hyper;
 	if (hyper == "y") {
-		int pos;
+		string pos;
 		cout << "Positive or negative? (p/n)\n";
 		cin >> pos;
 		if (pos == "p") {
 			cout << "Pick a degree";
 			int deg;
-			deg >> cin;
+			cin >> deg;
 			if (deg == 0) {
 				cout << "Give me a value";
 				cin >> xlong;
-				cout << "The result is " << succeed(x);
+				cout << "The result is " << succeed(xlong);
 			} else if (deg == 1) {
 				cout << "Give me a value";
 				cin >> xlong;
