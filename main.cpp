@@ -28,7 +28,7 @@ int main() {
                     cin >> xdouble;
                     cout << "The result is " << succeed(xdouble) << "\n";
                     cout << "Continue?";
-                    stati_cast<bool>(cin) >> loop;
+                    static_cast<bool>(cin) >> loop;
                 } else if (deg == 1) {
                     cout << "Give me a value\n";
                     cin >> xdouble;
