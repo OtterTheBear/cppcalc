@@ -28,13 +28,6 @@ int main() {
                     cout << "Give me a value\n";
                     cin >> xdouble;
                     cout << "The result is " << succeed(xdouble) << "\n";
-                    cout << "Continue? (y/n)";
-                    cin >> contin;
-                    if (contin != "y") {
-                        break;
-                    } else {
-                        continue;
-                    }
                 } else if (deg == 1) {
                     cout << "Give me a value\n";
                     cin >> xdouble;
@@ -49,6 +42,12 @@ int main() {
                     cout << "The result is " << xdouble * ydouble << "\n";
                 }
             }
+        }
+    
+        cout << "Continue?(y/n)\n";
+        cin >> contin;
+        if (contin == "n") {
+            break;
         }
     }
 }
