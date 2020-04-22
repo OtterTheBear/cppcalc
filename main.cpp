@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-#include "hyperops"
+#include "hyperops.cpp"
 using namespace std;
 
 int main() {
