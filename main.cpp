@@ -1,10 +1,11 @@
 #include <iostream>
+#include <sstream>
 #include <cmath>
 #include "hyperops.hpp"
 
 using namespace std;
 
-int main() {
+int main(int argc, char *argv[]) {
     long int xlong;
     long double xdouble;
     long int ylong;
@@ -12,6 +13,14 @@ int main() {
     bool loop = true;
     string contin;
     string hyper;
+
+    if (argc == 3) {
+        istringstream(argv[1]) >> xlong;
+        istringstream(argv[2]) >> ylong;
+        cout << "The result is " << ttrt(xlong, ylong) << endl;
+        return 0;
+    }
+
     cout << "Welcome to cppcalc\n";
     cout << "We have many calcs for you\n";
     while (loop) {
@@ -28,31 +37,31 @@ int main() {
                 if (deg == 0) {
                     cout << "Give me a value\n";
                     cin >> xdouble;
-                    cout << "The result is " << succeed(xdouble) << "\n";
+                    cout << "The result is " << succeed(xdouble) << endl;
                 } else if (deg == 1) {
                     cout << "Give me a value\n";
                     cin >> xdouble;
                     cout << "Give me another value\n";
                     cin >> ydouble;
-                    cout << "The result is " << xdouble + ydouble << "\n";
+                    cout << "The result is " << xdouble + ydouble << endl;
                 } else if (deg == 2) {
                     cout << "Give me a value\n";
                     cin >> xdouble;
                     cout << "Give me another one\n";
                     cin >> ydouble;
-                    cout << "The result is " << xdouble * ydouble << "\n";
+                    cout << "The result is " << xdouble * ydouble << endl;
                 } else if (deg == 3) {
                     cout << "Give me a value\n";
                     cin >> xdouble;
                     cout << "Give me another value\n";
                     cin >> ydouble;
-                    cout << "The result is " << pow(xdouble, ydouble) << "\n";
+                    cout << "The result is " << pow(xdouble, ydouble) << endl;
                 } else if (deg == 4) {
                     cout << "Give me a value\n";
                     cin >> xlong;
                     cout << "Give me another one\n";
                     cin >> ylong;
-                    cout << "The result is " << ttrt(xlong, ylong) << "\n";
+                    cout << "The result is " << ttrt(xlong, ylong) << endl;
                 }
             }
         }
