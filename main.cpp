@@ -35,11 +35,23 @@ int main() {
                     cin >> ydouble;
                     cout << "The result is " << xdouble + ydouble << "\n";
                 } else if (deg == 2) {
-                    cout << "Give me a value";
+                    cout << "Give me a value\n";
                     cin >> xdouble;
-                    cout << "Give me another one";
+                    cout << "Give me another one\n";
                     cin >> ydouble;
                     cout << "The result is " << xdouble * ydouble << "\n";
+                } else if (deg == 3) {
+                    cout << "Give me a value\n";
+                    cin >> xdouble;
+                    cout << "Give me another value\n";
+                    cin >> ydouble;
+                    cout << "The result is " << pow(xdouble, ydouble) << "\n";
+                } else if (deg == 4) {
+                    cout << "Give me a value\n";
+                    cin >> xlong;
+                    cout << "Give me another one\n";
+                    cin >> ylong;
+                    cout << "The result is " << ttrt(xlong, ylong) << "\n";
                 }
             }
         }
