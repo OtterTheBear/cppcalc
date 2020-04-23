@@ -2,6 +2,6 @@
 
 set -ex
 
-time ../bin/h 2 5
+time ../bin/h 3 3
 
 time ./ttrt2.py

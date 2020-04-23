@@ -6,4 +6,4 @@ def ttrt(x, n):
         y = x ** y
     return y
 
-print(ttrt(2, 5))
+print(ttrt(3, 3))
