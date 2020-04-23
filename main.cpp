@@ -10,9 +10,12 @@ int main(int argc, char *argv[]) {
     long double xdouble;
     long int ylong;
     long double ydouble;
+    cpp_int xhigh;
+    cpp_int yhigh;
     bool loop = true;
     string contin;
     string hyper;
+    string cppInt;
 
     if (argc == 3) {
         istringstream(argv[1]) >> xlong;
@@ -51,11 +54,21 @@ int main(int argc, char *argv[]) {
                     cin >> ydouble;
                     cout << "The result is " << xdouble * ydouble << endl;
                 } else if (deg == 3) {
-                    cout << "Give me a value\n";
-                    cin >> xdouble;
-                    cout << "Give me another value\n";
-                    cin >> ydouble;
-                    cout << "The result is " << pow(xdouble, ydouble) << endl;
+                    cout << "Integer or real exponentiation? (i/r)" << endl;
+                    cin >> cppInt;
+                    if (cppInt == "r") {
+                        cout << "Give me a value\n";
+                        cin >> xdouble;
+                        cout << "Give me another value\n";
+                        cin >> ydouble;
+                        cout << "The result is " << pow(xdouble, ydouble) << endl;
+                    } else if (cppInt == "i") {
+                        cout << "Give me a value" << endl;
+                        cin >> xhigh;
+                        cout << "Give me another value" << endl;
+                        cin >> yhigh;
+                        cout << "The result is " << mpow(xhigh, yhigh) << endl;
+                    }
                 } else if (deg == 4) {
                     cout << "Give me a value\n";
                     cin >> xlong;
