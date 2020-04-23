@@ -1,12 +1,13 @@
 #include <iostream>
 #include <cmath>
-#include "hyperops.cpp"
+#include "hyperops.hpp"
+
 using namespace std;
 
 int main() {
-    long long int xlong;
+    long int xlong;
     long double xdouble;
-    long long int ylong;
+    long int ylong;
     long double ydouble;
     bool loop = true;
     string contin;

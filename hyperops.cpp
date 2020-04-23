@@ -1,9 +1,17 @@
-#include <cmath>
+#include "hyperops.hpp"
 
-long int ttrt(int base, int height) {
-	long int output;
-	for (long int i; i < height; i++) {
-		output = pow(base, output);
+cpp_int mpow(cpp_int base, cpp_int exp) {
+    cpp_int result = base;
+    for (cpp_int e = 1; e < exp; e++) {
+        result = result * base;
+    }
+    return result;
+}
+
+cpp_int ttrt(cpp_int base, cpp_int height) {
+	cpp_int output = base;
+	for (cpp_int i = 1; i < height; i++) {
+		output = mpow(base, output);
 	}
 	return output;
 }
