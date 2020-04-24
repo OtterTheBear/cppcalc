@@ -28,6 +28,7 @@ int main(int argc, char *argv[]) {
 
     cout << "Welcome to cppcalc\n";
     cout << "We have many calcs for you\n";
+    cout << "See the README.txt file for more information" << endl;
     while (loop) {
         cout << "Hyperoperation or no? (y/n)\n";
         cin >> hyper;
