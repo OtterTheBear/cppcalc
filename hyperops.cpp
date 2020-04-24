@@ -20,10 +20,10 @@ double nthroot(double x, double n) {
     return pow(x, (1/n));
 } 
 
-long long int succeed(long long int x) {
+long int succeed(long int x) {
 	return x + 1;
 }
 
-long long int preceed(long long int x) {
-    return x + 1;
+long int preceed(long int x) {
+    return x - 1;
 }

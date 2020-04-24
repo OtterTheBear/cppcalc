@@ -82,8 +82,8 @@ int main(int argc, char *argv[]) {
                 cin >> deg;
                 if (deg == 0) {
                     cout << "Give me a value\n";
-                    cin >> xdouble;
-                    cout << "The result is " << succeed(xdouble) << endl;
+                    cin >> xlong;
+                    cout << "The result is " << preceed(xlong) << endl;
                 } else if (deg == 1) {
                     cout << "Give me a value\n";
                     cin >> xdouble;
