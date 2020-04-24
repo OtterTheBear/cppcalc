@@ -16,6 +16,8 @@ int main(int argc, char *argv[]) {
     string contin;
     string hyper;
     string cppInt;
+    string rootorlog;
+    int deg;
 
     if (argc == 3) {
         istringstream(argv[1]) >> xlong;
@@ -35,7 +37,6 @@ int main(int argc, char *argv[]) {
             cin >> pos;
             if (pos == "p") {
                 cout << "Pick a degree\n";
-                int deg;
                 cin >> deg;
                 if (deg == 0) {
                     cout << "Give me a value\n";
@@ -75,6 +76,37 @@ int main(int argc, char *argv[]) {
                     cout << "Give me another one\n";
                     cin >> ylong;
                     cout << "The result is " << ttrt(xlong, ylong) << endl;
+                }
+            } else if (pos == "n") {
+                cout << "Pick a degree";
+                cin >> deg;
+                if (deg == 0) {
+                    cout << "Give me a value\n";
+                    cin >> xdouble;
+                    cout << "The result is " << succeed(xdouble) << endl;
+                } else if (deg == 1) {
+                    cout << "Give me a value\n";
+                    cin >> xdouble;
+                    cout << "Give me another value\n";
+                    cin >> ydouble;
+                    cout << "The result is " << xdouble - ydouble << endl;
+                } else if (deg == 2) {
+                    cout << "Give me a value\n";
+                    cin >> xdouble;
+                    cout << "Give me another one\n";
+                    cin >> ydouble;
+                    cout << "The result is " << xdouble / ydouble << endl;
+                } else if (deg >= 3) {
+                    cout << "Root-type or Log-type?(r/l)" << endl;
+                    cin >> rootorlog;
+                    if (rootorlog == "r") {
+                        cout << "Currently only inverse powering and exponentiating is possible..." << endl;
+                        cout << "So give me a value (under the radical sign)" << endl;
+                        cin >> xdouble;
+                        cout << "Give me another value" << endl;
+                        cin >> ydouble;
+                        cout << "The answer is " << nthroot(xdouble, ydouble) << endl;
+                    }
                 }
             }
         }

@@ -6,5 +6,7 @@ cpp_int mpow(cpp_int base, cpp_int exp);
 
 cpp_int ttrt(cpp_int base, cpp_int height);
 
-long long int succeed(long long int x);
+double nthroot(double x, double n);
 
+long long int succeed(long long int x);
+long long int preceed(long long int x);
