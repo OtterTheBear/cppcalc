@@ -22,19 +22,25 @@ in integer mode.
     cmdcppcalc
 
 cmdcppcalc is a feature added to cppcalc in version 1.4 which allows the
-skipping of menus and for the user directly get results. To use cmdcppcalc,
+skipping of menus and for the user to directly get results. To use cmdcppcalc,
 when you run cppcalc specify an operation and two operands. An example of using
 cmdcppcalc for raising 8 to the power of 8 is shown below.
 
     $ ./main pow 8 8
     The result is 16777216
 
-As of v1.4 cmdcppcalc supports adding, multiplying, powering, and
+As of v1.4.1 cmdcppcalc supports adding, multiplying, powering, and
 tetrating, but doesn't support floating-point values as inputs.
+The list of operations is below.
+
+add - addition
+mul - multiplication
+pow - powering
+trt - tetrating
 
     FEATURES
 
-cppcalc has support for suucession, addition, multiplication, exponentiation,
+cppcalc has support for sucession, addition, multiplication, exponentiation,
 tetration, predecession, subtraction, division, and roots.
 
     FUTURE
@@ -43,4 +49,4 @@ The next few updates will add logarithms and maybe generalised hyperoperations.
 
     VERSION
 
-Your version of cppcalc is 1.4
+Your version of cppcalc is 1.4.1
