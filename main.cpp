@@ -19,11 +19,25 @@ int main(int argc, char *argv[]) {
     string rootorlog;
     int deg;
 
-    if (argc == 3) {
-        istringstream(argv[1]) >> xlong;
-        istringstream(argv[2]) >> ylong;
-        cout << "The result is " << ttrt(xlong, ylong) << endl;
-        return 0;
+    if (argc == 4) {
+        istringstream(argv[2]) >> xhigh;
+        istringstream(argv[3]) >> yhigh;
+        if (strcmp(argv[1], "add") == 0) {
+            cout << "The result is " << (xhigh + yhigh) << endl;
+            return 0;
+        } else if (strcmp(argv[1], "mul") == 0) {
+            cout << "The result is " << (xhigh * yhigh) << endl;
+            return 0;
+        } else if (strcmp(argv[1], "pow") == 0) {
+            cout << "The result is " << mpow(xhigh, yhigh) << endl;
+            return 0;
+        } else if (strcmp(argv[1], "trt") == 0) {
+            cout << "The result is " << ttrt(xhigh, yhigh) << endl;
+            return 0;
+        } else {
+            cout << "Error: unsupported operation." << endl;
+            return 0;
+        }
     }
 
     cout << "Welcome to cppcalc\n";

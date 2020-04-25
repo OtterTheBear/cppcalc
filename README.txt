@@ -14,10 +14,23 @@ equation it is solving is x*y, when it says "Give me a value" it asks for x,
 when it says "Give me another one" it asks for y. This is the same for all
 binary operations.
 
-Currently, (v1.2) when the user chooses exponentiation, it asks wether they want
+Currently, when the user chooses exponentiation, it asks wether they want
 integer or real exponentiation. This is added so large integer exponentiations
 such as 2^65536 return the actual value instead of inf when they are performed
 in integer mode.
+
+    cmdcppcalc
+
+cmdcppcalc is a feature added to cppcalc in version 1.4 which allows the
+skipping of menus and for the user directly get results. To use cmdcppcalc,
+when you run cppcalc specify an operation and two operands. An example of using
+cmdcppcalc for raising 8 to the power of 8 is shown below.
+
+    $ ./main pow 8 8
+    The result is 16777216
+
+As of v1.4 cmdcppcalc supports adding, multiplying, powering, and
+tetrating, but doesn't support floating-point values as inputs.
 
     FEATURES
 
@@ -30,4 +43,4 @@ The next few updates will add logarithms and maybe generalised hyperoperations.
 
     VERSION
 
-Your version of cppcalc is 1.3
+Your version of cppcalc is 1.4
