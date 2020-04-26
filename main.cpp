@@ -2,7 +2,7 @@
 #include <sstream>
 #include <cmath>
 #include "hyperops.hpp"
-
+#include <cstdlib>i
 using namespace std;
 
 int main(int argc, char *argv[]) {
@@ -37,6 +37,14 @@ int main(int argc, char *argv[]) {
         } else {
             cout << "Error: unsupported operation." << endl;
             return 0;
+        }
+    } else if (argc == 2) {
+        if (  strcmp(argv[1], "Hewo") == 0  ) {
+            cout << ">:3" << endl;
+            return 0;
+        } else if (  strcmp(argv[1], "help") == 0  ) {
+            int h;
+            h = system("help.sh");
         }
     }
 
