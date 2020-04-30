@@ -9,4 +9,7 @@ c++ -c -o ../bin/main.o main.cpp
 
 g++ -o ../bin/main ../bin/hyperops.o ../bin/main.o -lboost_math_c99
 
+cp help.sh ../bin/help.sh
+cp README.md ../bin/README.md
+
 

@@ -38,7 +38,9 @@ mul - multiplication
 pow - powering
 trt - tetrating
 
-In v1.5 and later it is possible to read this file using
+## Reading this file
+
+In v1.5 and later it is possible to read this file (README.md) using
 ```bash
     $ ./main help
 ```
@@ -53,5 +55,4 @@ The next few updates will add logarithms and maybe generalised hyperoperations.
 
 ## Version
 
-Your version of cppcalc is 1.5.1
-
+Your version of cppcalc is 1.5.2
