@@ -38,13 +38,8 @@ int main(int argc, char *argv[]) {
             cout << (xhigh - yhigh) << endl;
             return 0;
         } else if (strcmp(argv[1], "div") == 0) {
-            int lenx = strlen(argv[2]);
             int leny = strlen(argv[3]);
-            int prec = lenx;
-            if (leny > prec) {
-                prec = leny;
-            }
-            prec++;
+            int prec = leny + 1;
             ostringstream buffer;
             buffer << (xhigh * mpow(10, prec)) / yhigh;
             string s;
