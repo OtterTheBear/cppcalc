@@ -7,9 +7,9 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
     long int xlong;
-    long double xdouble;
+    double xdouble;
     long int ylong;
-    long double ydouble;
+    double ydouble;
     cpp_int xhigh;
     cpp_int yhigh;
     bool loop = true;
@@ -23,16 +23,40 @@ int main(int argc, char *argv[]) {
         istringstream(argv[2]) >> xhigh;
         istringstream(argv[3]) >> yhigh;
         if (strcmp(argv[1], "add") == 0) {
-            cout << "The result is " << (xhigh + yhigh) << endl;
+            cout << (xhigh + yhigh) << endl;
             return 0;
         } else if (strcmp(argv[1], "mul") == 0) {
-            cout << "The result is " << (xhigh * yhigh) << endl;
+            cout << (xhigh * yhigh) << endl;
             return 0;
         } else if (strcmp(argv[1], "pow") == 0) {
-            cout << "The result is " << mpow(xhigh, yhigh) << endl;
+            cout << mpow(xhigh, yhigh) << endl;
             return 0;
         } else if (strcmp(argv[1], "trt") == 0) {
-            cout << "The result is " << ttrt(xhigh, yhigh) << endl;
+            cout << ttrt(xhigh, yhigh) << endl;
+            return 0;
+        } else if (strcmp(argv[1], "sub") == 0) {
+            cout << (xhigh - yhigh) << endl;
+            return 0;
+        } else if (strcmp(argv[1], "div") == 0) {
+            int lenx = strlen(argv[2]);
+            int leny = strlen(argv[3]);
+            int prec = lenx;
+            if (leny > prec) {
+                prec = leny;
+            }
+            prec++;
+            ostringstream buffer;
+            buffer << (xhigh * mpow(10, prec)) / yhigh;
+            string s;
+            s = buffer.str();
+            if (s.length() < prec) {
+                s.insert(0, prec - s.length(), '0');
+            }
+            s.insert(s.length() - prec, 1, '.');
+            cout << s << endl;
+            return 0;
+        } else if (strcmp(argv[1], "rot") == 0) {
+            cout << nthroot(xdouble, ydouble) << endl;
             return 0;
         } else {
             cout << "Error: unsupported operation." << endl;

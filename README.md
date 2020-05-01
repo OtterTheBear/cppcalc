@@ -29,14 +29,16 @@ cmdcppcalc for raising 8 to the power of 8 is shown below.
     $ ./main pow 8 8
     The result is 16777216
 ```
-As of v1.5 cmdcppcalc supports adding, multiplying, powering, and
-tetrating, but doesn't support floating-point values as inputs.
+As of v1.6 cmdcppcalc supports adding, multiplying, powering, tetrating,
+subtaraction, and division, but doesn't support floating-point values as inputs.
 The list of operations is below.
 
 add - addition
 mul - multiplication
 pow - powering
 trt - tetrating
+sub - subtraction
+div - division
 
 ## Reading this file
 
@@ -55,4 +57,4 @@ The next few updates will add logarithms and maybe generalised hyperoperations.
 
 ## Version
 
-Your version of cppcalc is 1.5.2
+Your version of cppcalc is 1.6
